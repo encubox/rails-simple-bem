@@ -1,4 +1,10 @@
 RailsSimpleBem::Application.routes.draw do
+  root :to => 'home#index'
+
+  get "demo/one"
+  get "demo/two"
+  get "demo/three"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

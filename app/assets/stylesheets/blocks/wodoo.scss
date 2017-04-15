@@ -1,0 +1,13 @@
+.b-wodoo {
+  background: #ccc;
+  width: 200px;
+  height: 200px;
+
+  &__item {
+    border-bottom: 1px dotted #000;
+
+    &:hover {
+      background: yellow;
+    }
+  }
+}

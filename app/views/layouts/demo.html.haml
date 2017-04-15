@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title RailsHtml
+    = stylesheet_link_tag    "demo-lib", :media => "all"
+    = stylesheet_link_tag    "demo", :media => "all"
+    = javascript_include_tag "demo-lib"
+    = javascript_include_tag "demo"
+    = csrf_meta_tags
+  %body
+    .page{data: {page_action: controller.action_name, page_controller: controller.controller_name}}
+      = render 'layouts/demo/menu'
+      = yield

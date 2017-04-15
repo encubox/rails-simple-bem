@@ -1,0 +1,15 @@
+.b-magic {
+  &__outer-square {
+    background: #fff;
+    outline: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+  }
+  
+  &__inner-square {
+    background: #ccc;
+    width: 100px;
+    height: 100px;
+  }
+}
