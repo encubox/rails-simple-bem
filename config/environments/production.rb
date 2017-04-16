@@ -8,17 +8,24 @@ RailsSimpleBem::Application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
-  # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = false
+  # Something nasty happens with assets on heroku
+  # # Disable Rails's static asset server (Apache or nginx will already do this)
+  # config.serve_static_assets = false
 
-  # Compress JavaScripts and CSS
-  config.assets.compress = true
+  # # Compress JavaScripts and CSS
+  # config.assets.compress = true
 
-  # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  # # Don't fallback to assets pipeline if a precompiled asset is missed
+  # config.assets.compile = false
 
-  # Generate digests for assets URLs
-  config.assets.digest = true
+  # # Generate digests for assets URLs
+  # config.assets.digest = true
+
+  # Do not compress assets
+  config.assets.compress = false
+
+  # Expands the lines which load the assets
+  config.assets.debug = true
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
@@ -47,6 +54,7 @@ RailsSimpleBem::Application.configure do
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
+  config.assets.precompile += %w( demo.js demo-lib.js demo.css )
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false

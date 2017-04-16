@@ -1,8 +1,3 @@
-#= require ./classes/BaseHandler
-#= require_tree ./classes/blocks
-#= require_tree ./classes/controllers
-#= require_tree ./classes/actions
-
 String.prototype.capitalizeFirstLetter = ->
   return this.charAt(0).toUpperCase() + this.slice(1);
 
